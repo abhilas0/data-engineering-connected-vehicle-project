@@ -1,6 +1,6 @@
-# **Connected Smart Vehicle**
+# ** Data Engineering Connected Smart Vehicle Project**
 
-## Project Understanding
+## Project Description
 
 ### Architecture 
 
