@@ -1,4 +1,4 @@
-# **Smart Vehicle**
+# **Connected Smart Vehicle**
 
 ## Project Understanding
 
