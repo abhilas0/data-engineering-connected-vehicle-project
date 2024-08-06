@@ -12,12 +12,12 @@ A leading vehicle company has implemented IoT devices in their cars to collect t
 
 ### Architecture 
 
-**1. Data Ingestion:**
+**1. Data Ingestion**
    
   * **Source**: Amazon S3 bucket.
   * **Frequency**: Real-time or batch uploads of telematics data.
 
-**2. Data Transfer to ADLS:**
+**2. Data Transfer to ADLS**
 
   * **Tool**: Azure Data Factory (ADF)
   * **Process**: ADF pipelines will be configured to periodically extract data from Amazon S3 and load it into ADLS.
@@ -25,20 +25,20 @@ A leading vehicle company has implemented IoT devices in their cars to collect t
 
 **3. Data Loading to Azure SQL Database:**
 
-* **Tool**: ADF
+* **Tool:** ADF
   * **Process:**
     * Load processed data from ADLS into Azure SQL Database.
     * Implement incremental data loading to handle continuous data streams.
 
 ![Smart Vehicle Project](https://github.com/user-attachments/assets/17343768-2fc7-43f3-86c4-af60ae146c43)
 
-### Expected Outcomes:
+### Expected Outcomes
 
 * Using this data pipeline and analytics tool, company can gain real-time insights into vehicle performance and driver behavior.
 * Improved decision-making based on data-driven analytics.
 * Enhanced operational efficiency and reduced maintenance costs.
 
-### Technologies Used:
+### Technologies Used
 
 * **AWS:** S3, IAM
 * **Azure:** Data Lake Storage, Data Factory,SQL Database
@@ -46,7 +46,7 @@ A leading vehicle company has implemented IoT devices in their cars to collect t
 * **Security:** Managed Identities, IAM Roles, SQL Authentication
 
 
-### Conclusion:
+### Conclusion
 This project will enable the vehicle company to leverage IoT data effectively. The seamless data pipeline from Amazon S3 to Azure SQL Database ensures data integrity, scalability, and real-time processing capabilities.
 
 
