@@ -1,0 +1,55 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-projects-iot-connected-vehicles"
+		},
+		"AzureSqlDatabase2_password": {
+			"value": ""
+		},
+		"LS_AzureDataLakeStorage_accountKey": {
+			"value": ""
+		},
+		"LS_AzureSqlDatabase_password": {
+			"value": ""
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://iot-device-project.vault.azure.net/"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_server": {
+			"value": "databaseserveradf.database.windows.net"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_database": {
+			"value": "azuresqldbfortesting"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_userName": {
+			"value": "abhilash"
+		},
+		"LS_AmazonS3_properties_typeProperties_accessKeyId": {
+			"value": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "iot-access-key-id"
+			}
+		},
+		"LS_AzureDataLakeStorage_properties_typeProperties_url": {
+			"value": "https://missionadebathch8adls23.dfs.core.windows.net/"
+		},
+		"LS_AzureSqlDatabase_properties_typeProperties_server": {
+			"value": "mission100abhilashserver.database.windows.net"
+		},
+		"LS_AzureSqlDatabase_properties_typeProperties_database": {
+			"value": "master"
+		},
+		"LS_AzureSqlDatabase_properties_typeProperties_userName": {
+			"value": "abhilash"
+		},
+		"iot_trigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/7ae103b2-6c79-4a9d-8d5c-4e07d943529d/resourceGroups/azuredetrainingdeepak/providers/Microsoft.Storage/storageAccounts/missionadebathch8adls23"
+		}
+	}
+}
