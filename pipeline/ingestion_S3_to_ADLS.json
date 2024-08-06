@@ -52,7 +52,13 @@
 				"outputs": [
 					{
 						"referenceName": "DS_ADLS_JSON",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"landingFolder": {
+								"value": "@concat('landing / IOT data',formatDateTime(utcNow(),'yyyy'),'/',formatDateTime(utcNow(),'MM'),'/',formatDateTime(utcNow(),'DD'))",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
