@@ -34,9 +34,9 @@ A leading vehicle company has implemented IoT devices in their cars to collect t
 
 ### Expected Outcomes:
 
-Real-time insights into vehicle performance and driver behavior.
-Improved decision-making based on data-driven analytics.
-Enhanced operational efficiency and reduced maintenance costs.
+* Using this data pipeline and analytics tool, company can gain real-time insights into vehicle performance and driver behavior.
+* Improved decision-making based on data-driven analytics.
+* Enhanced operational efficiency and reduced maintenance costs.
 
 ### Technologies Used:
 
