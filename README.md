@@ -30,7 +30,7 @@ A leading vehicle company has implemented IoT devices in their cars to collect t
     * Load processed data from ADLS into Azure SQL Database.
     * Implement incremental data loading to handle continuous data streams.
 
-![Smart Vehicle Project](https://github.com/user-attachments/assets/17343768-2fc7-43f3-86c4-af60ae146c43)
+![Smart Vehicle Project (1)](https://github.com/user-attachments/assets/b1ab03de-774d-4620-bf64-41a6ab562caa)
 
 ### Expected Outcomes
 
