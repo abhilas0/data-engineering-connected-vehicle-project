@@ -56,7 +56,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"landingFolder": {
-								"value": "@concat('landing/IOT_data/',formatDateTime(utcNow(),'yyyy'),'/',formatDateTime(utcNow(),'MM'),'/',formatDateTime(utcNow(),'dd'),'/')",
+								"value": "@concat('landing/IOT_data/',formatDateTime(utcnow(),'yyyy'),'/',formatDateTime(utcnow(),'MM'),'/',formatDateTime(utcnow(),'dd'),'/')",
 								"type": "Expression"
 							}
 						}
