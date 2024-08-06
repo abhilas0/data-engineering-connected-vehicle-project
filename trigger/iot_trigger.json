@@ -1,0 +1,24 @@
+{
+	"name": "iot_trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "ingestion_ADLS_toSQL",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/landing/blobs/Staging/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/7ae103b2-6c79-4a9d-8d5c-4e07d943529d/resourceGroups/azuredetrainingdeepak/providers/Microsoft.Storage/storageAccounts/missionadebathch8adls23",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
