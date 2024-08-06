@@ -1,0 +1,19 @@
+{
+	"name": "DS_iot_json_valid",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AzureDataLakeStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Staging",
+				"fileSystem": "landing"
+			}
+		},
+		"schema": {}
+	}
+}
