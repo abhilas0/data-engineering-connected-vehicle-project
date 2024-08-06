@@ -31,7 +31,13 @@
 				"inputs": [
 					{
 						"referenceName": "DS_S3_JSON",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"folderPath": {
+								"value": "@concat(formatDateTime(utcNow(),'yyyy'),'/',formatDateTime(utcNow(),'MM'),'/',formatDateTime(utcNow(),'DD'))",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
