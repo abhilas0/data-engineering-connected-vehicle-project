@@ -5,12 +5,20 @@
 			"referenceName": "LS_AzureDataLakeStorage",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"landingFolder": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "Json",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "IOT data",
+				"folderPath": {
+					"value": "@dataset().landingFolder",
+					"type": "Expression"
+				},
 				"fileSystem": "landing"
 			}
 		},
