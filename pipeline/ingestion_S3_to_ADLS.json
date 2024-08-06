@@ -44,7 +44,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"folderPath": {
-								"value": "@concat(formatDateTime(utcNow(),'yyyy'),'/',formatDateTime(utcNow(),'MM'),'/',formatDateTime(utcNow(),'dd'))",
+								"value": "@concat(formatDateTime(utcNow(),'yyyy'),'/',formatDateTime(utcNow(),'MM'),'/',formatDateTime(utcNow(),'dd'),'/')",
 								"type": "Expression"
 							}
 						}
