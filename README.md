@@ -6,16 +6,16 @@ A leading vehicle company has implemented IoT devices in their cars to collect t
 
 ### Objectives
 
-* Establish a secure and efficient data pipeline from Amazon S3 to ADLS. \
-* Transform and load data from ADLS to Azure SQL Database. \
+* Establish a secure and efficient data pipeline from Amazon S3 to ADLS.
+* Transform and load data from ADLS to Azure SQL Database.
 * Ensure data integrity, scalability, and real-time processing capabilities.
 
 ### Architecture 
 
 **1. Data Ingestion:**
    
-  * Source: Amazon S3 bucket.
-  * Frequency: Real-time or batch uploads of telematics data.
+  * **Source**: Amazon S3 bucket.
+  * **Frequency**: Real-time or batch uploads of telematics data.
 
 **2. Data Transfer to ADLS:**
 
@@ -23,22 +23,14 @@ A leading vehicle company has implemented IoT devices in their cars to collect t
   * **Process**: ADF pipelines will be configured to periodically extract data from Amazon S3 and load it into ADLS.
   * **Security**: Use AWS IAM roles and Azure Managed Identity for secure data transfer.
 
-**3. Data Processing and Transformation:**
+**3. Data Loading to Azure SQL Database:**
+
+* **Tool**: ADF
+  * **Process:**
+    * Load processed data from ADLS into Azure SQL Database.
+    * Implement incremental data loading to handle continuous data streams.
 
 ![Smart Vehicle Project](https://github.com/user-attachments/assets/17343768-2fc7-43f3-86c4-af60ae146c43)
-
-Tool: Azure Databricks or Azure Synapse Analytics.
-Process:
-Clean and transform raw IoT data.
-Apply business rules and aggregate data as needed.
-Storage: Transformed data will be stored back into ADLS.
-Data Loading to Azure SQL Database:
-
-Tool: ADF or Azure Databricks.
-Process:
-Load processed data from ADLS into Azure SQL Database.
-Implement incremental data loading to handle continuous data streams.
-
 
 ### Expected Outcomes:
 
