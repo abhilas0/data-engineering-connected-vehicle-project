@@ -1,0 +1,9 @@
+{
+	"name": "adf-projects-iot-connected-vehicles",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b5d30d64-b8cc-4c33-80bf-51a25045ee19",
+		"tenantId": "c9515ae6-7419-4ae5-a700-4bb5f4afa7dc"
+	}
+}
