@@ -29,7 +29,7 @@
 					"sink": {
 						"type": "JsonSink",
 						"storeSettings": {
-							"type": "AmazonS3WriteSettings"
+							"type": "AzureBlobFSWriteSettings"
 						},
 						"formatSettings": {
 							"type": "JsonWriteSettings"
@@ -51,7 +51,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "DS_S3_JSON",
+						"referenceName": "DS_ADLS_JSON",
 						"type": "DatasetReference"
 					}
 				]

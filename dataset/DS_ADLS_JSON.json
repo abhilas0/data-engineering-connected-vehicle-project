@@ -1,0 +1,19 @@
+{
+	"name": "DS_ADLS_JSON",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AzureDataLakeStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "IOT data",
+				"fileSystem": "landing"
+			}
+		},
+		"schema": {}
+	}
+}
