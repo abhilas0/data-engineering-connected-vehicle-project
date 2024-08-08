@@ -38,7 +38,7 @@ The project also involves implementing an Azure Function App to validate the JSO
 
 
 
-**Key Technologies**
+### Key Technologies
    * **Amazon S3:** Storage of raw IoT data.
    * **Azure Data Lake Storage (ADLS):** Storage and processing of raw and processed data.
    * **Azure Function App:** Validation and routing of JSON files based on their structure.
