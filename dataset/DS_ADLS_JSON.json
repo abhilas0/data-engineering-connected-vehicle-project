@@ -19,7 +19,7 @@
 					"value": "@dataset().landingFolder",
 					"type": "Expression"
 				},
-				"fileSystem": "landing"
+				"fileSystem": "landing2"
 			}
 		},
 		"schema": {}
