@@ -168,7 +168,7 @@
 							"value": "@dataset().landingFolder",
 							"type": "Expression"
 						},
-						"fileSystem": "landing"
+						"fileSystem": "landing2"
 					}
 				},
 				"schema": {}
@@ -222,7 +222,7 @@
 				],
 				"typeProperties": {
 					"schema": "dbo",
-					"table": "VehicleData"
+					"table": "Vehicle_Data"
 				}
 			},
 			"dependsOn": [
@@ -456,7 +456,7 @@
 								"type": "DatasetReference",
 								"parameters": {
 									"landingFolder": {
-										"value": "@concat('IOT_data /',formatDateTime(utcnow(),'yyyy'),'/',formatDateTime(utcnow(),'MM'),'/',formatDateTime(utcnow(),'dd'),'/')",
+										"value": "@concat('IOT/',formatDateTime(utcnow(),'yyyy'),'/',formatDateTime(utcnow(),'MM'),'/',formatDateTime(utcnow(),'dd'),'/')",
 										"type": "Expression"
 									}
 								}
@@ -480,7 +480,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Started",
+				"runtimeState": "Stopped",
 				"pipelines": [
 					{
 						"pipelineReference": {
