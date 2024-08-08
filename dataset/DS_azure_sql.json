@@ -41,7 +41,7 @@
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "VehicleData"
+			"table": "Vehicle_Data"
 		}
 	}
 }
